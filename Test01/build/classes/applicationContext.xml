@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:aop="http://www.springframework.org/schema/aop"
+         xmlns:tx="http://www.springframework.org/schema/tx"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="TUser" class="com.jsu.po.Users">
+        <property name="user_id" value="20"></property>
+        <property name="user_name" value="张三"></property>
+    </bean> 
+    
+    <bean id="loginAction" class="com.jsu.action.LoginAction" scope="prototype">
+	
+
+	</bean>
+	
+	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/wifi" />
+        <property name="username" value="root"></property>
+        <property name="password" value="763893636"></property>
+    </bean>  
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+     	<property name="dataSource" ref="dataSource" />
+     	<property name="configLocation">
+         	<value>classpath:hibernate.cfg.xml</value>
+     	</property>   
+     	<property name="mappingLocations" value="classpath:*.hbm.xml"></property>
+ 	</bean>
+ 
+ <!-- 配置事务管理器 -->
+ <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+     <property name="sessionFactory">
+         <ref bean="sessionFactory"/>
+     </property>   
+ </bean>
+
+<tx:advice id="smAdvice" transaction-manager="transactionManager">
+     <tx:attributes>
+         <tx:method name="save*" propagation="REQUIRED"/>
+         <tx:method name="del*" propagation="REQUIRED"/>
+         <tx:method name="update*" propagation="REQUIRED"/>
+     </tx:attributes>
+ </tx:advice>
+ 
+ <aop:config>
+     <aop:pointcut id="smMethod" 
+expression="execution(* test.service.impl.*.*(..))"/>
+     <aop:advisor pointcut-ref="smMethod" advice-ref="smAdvice"/>
+ </aop:config>
+
+	<bean name="userDao" class="com.jsu.dao.IUserDaoImpl" >  
+        <property name="sessionFactory" ref="sessionFactory"></property>  
+    </bean>  
+    
+
+	<bean name="userService" class="com.jsu.Iservice.UserService" >  
+        <property name="IUserDaoImpl" ref="userDao"></property>  
+	</bean>
+</beans> 

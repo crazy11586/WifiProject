@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-// Hibernate /Hibernate Mapping DTD 3.0//EN"
+      "http://hibernate.sourceforge.NET/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jsu.po">
+	<class name="Users" table="users" catalog="wifi">
+		
+		<id name="user_id" column="user_id" type="int">
+                  <generator class="native"/>
+        </id>
+        
+        <property name="user_name" column="user_name" type="java.lang.String" length="255" unique="false"/>
+	
+	</class>
+</hibernate-mapping>
