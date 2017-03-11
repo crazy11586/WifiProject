@@ -22,71 +22,24 @@ public class LoginAction extends ActionSupport {
 
 	public String execute(){
 
-		System.out.println("OK    ");
-//		if (!username.equals("admin")) {
-//			super.addFieldError("username", "ÓÃ»§Ãû´íÎó£¡");
-//			return ERROR;
-//		}
-//
-//		if (!password.equals("123456")) {
-//			super.addFieldError("password", "ÃÜÂë´íÎó£¡");
-//			return ERROR;
-//
-//		}
-//	
-//		Session session = HibernateSessionFactory.getSession();
-//
-//		Transaction tx = null;
-//        try
-//        {
-//             // Begin transaction
-//             tx = session.beginTransaction();
-//             
-//             // Create a Product object and set its property
-//             Users product = new Users();
-//             product.setUser_name("yes");
-//            
-//             // Save the object
-//             session.save(product);
-//             // Commin
-//             tx.commit();
-//        }
-//        catch (Exception e)
-//        {
-//             if (tx != null)
-//             {
-//                  tx.rollback();
-//             }
-//             try
-//             {
-//                  // Spread the exception
-//                  throw e;
-//             }
-//             catch (Exception e2)
-//             {
-//                  e2.printStackTrace();
-//             }
-//        }
-//        finally
-//        {
-//             // Close the session
-//             session.close();
-//        }
+		
+		if (!username.equals("admin")) {
+			super.addFieldError("username", "ç”¨æˆ·åé”™è¯¯ï¼");
+			return ERROR;
+		}
+
+		if (!password.equals("123456")) {
+			super.addFieldError("password", "å¯†ç é”™è¯¯ï¼");
+			return ERROR;
+
+		}
+
+//		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//		      //ä»å®¹å™¨ æ¥ç®¡Bean
+//		Users user = (Users) ac.getBean("TUser");
+//		      //è¾“å‡ºæ¬¢è¿ä¿¡æ¯
 //		
-		
-		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		      //´ÓÈİÆ÷ ½Ó¹ÜBean
-		Users user = (Users) ac.getBean("TUser");
-		      //Êä³ö»¶Ó­ĞÅÏ¢
-		
-		System.out.println( "Hello:" + user.getUser_name() + ";u is in " + user.getUser_id() + " ;");
-		
-//		try {
-//			testName();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+//		System.out.println( "Hello:" + user.getUser_name() + ";u is in " + user.getUser_id() + " ;");
 		
 		return SUCCESS;
 	}
@@ -94,14 +47,15 @@ public class LoginAction extends ActionSupport {
 	public void validate() {
 		
 		if (username == null || username.length() == 0) {
-			super.addActionError("ÓÃ»§Ãû²»ÄÜÎª¿Õ");
+			super.addActionError("ç”¨æˆ·åä¸èƒ½ä¸ºç©º");
 
 		}
 		
 		if (password == null || password.length() == 0) {
-			super.addActionError("ÃÜÂë²»ÄÜÎª¿Õ");
+			super.addActionError("å¯†ç ä¸èƒ½ä¸ºç©º");
 
 		}
+		//sadas
 
 	}
 	
@@ -109,24 +63,13 @@ public class LoginAction extends ActionSupport {
 	public void testName() throws Exception {
 
 
-//		ApplicationContext context= new ClassPathXmlApplicationContext("/applicationContext.xml");  
-//	    UserService service =(UserService) context.getBean("userService");  
-//		 
-//		Users user = new Users();  
-//		   
-//		user.setUser_name("me"); 
-//		 
-//		service.saveUser(user);
-//		
-		//Calendar calendar = new Calendar(new Date().getTimezoneOffset());
-	
-		String weeks[] = {"ĞÇÆÚÈÕ","ĞÇÆÚÒ»","ĞÇÆÚ¶ş","ĞÇÆÚÈı","ĞÇÆÚËÄ","ĞÇÆÚÎå","ĞÇÆÚÁù"};
-		
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(new Date());
-		System.out.println(weeks[calendar.get(Calendar.DAY_OF_WEEK)-1]);
-		System.out.println(calendar.get(Calendar.HOUR_OF_DAY));
-		
+		ApplicationContext context= new ClassPathXmlApplicationContext("/applicationContext.xml");  
+	    UserService service =(UserService) context.getBean("userService");
+	    
+		Users user = new Users();  	   
+		user.setUser_name("me"); 
+		// Save the object
+		service.saveUser(user);	
 		
 	}
 
