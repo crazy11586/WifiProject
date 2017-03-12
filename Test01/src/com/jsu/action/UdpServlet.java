@@ -47,9 +47,7 @@ public class UdpServlet {
 	            String temp = text;
 	            
 	            String splies[] = temp.split("\n");
-	          //  System.out.println("length --"+splies.length);
 	            for(int i =1 ; i < splies.length  ; i ++){
-	          //  	System.out.println(i+" --"+splies[i]);
 		            TzData date = new TzData();
 		            
 		            String splits[] = splies[i].split("\\|");
