@@ -2,6 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC
       "-// Hibernate /Hibernate Mapping DTD 3.0//EN"
       "http://hibernate.sourceforge.NET/hibernate-mapping-3.0.dtd">
+      
 <hibernate-mapping package="com.jsu.po">
 
 	<class name="Users" table="users" catalog="wifi">
@@ -10,7 +11,7 @@
 			<generator class="native" />
 		</id>
 
-		<property name="user_name" column="user_name" type="java.lang.String"
+		<property name="user_name" column="user_name" type="string"
 			length="255" unique="false" />
 
 	</class>

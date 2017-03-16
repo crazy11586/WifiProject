@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<data> 
+  <wifi_item> 
+    <key>00-01-6C-06-A6-29</key>  
+    <value>FOXCONN</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a8:57:4e</key>  
+    <value>TP-LINK TECHNOLOGIES CO.,LTD.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>5c:a8:6a</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b0:e2:35</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>e0:b9:4d</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>74:23:44</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>4a:c2:dd</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>4e:dc:ff</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>bc:d1:77</key>  
+    <value>TP-LINK TECHNOLOGIES CO.,LTD.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9e:2a:70</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9e:d2:1e</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:17:7b</key>  
+    <value>Azalea Networks inc</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>dc:53:60</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>44:6d:57</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>74:c6:3b</key>  
+    <value>AzureWave Technology Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c4:8e:8f</key>  
+    <value>Hon Hai Precision Ind. Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:03:7f</key>  
+    <value>Atheros Communications, Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b8:bc:1b</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>14:1f:78</key>  
+    <value>Samsung Electronics Co.,Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c0:61:18</key>  
+    <value>TP-LINK TECHNOLOGIES CO.,LTD.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>80:a5:89</key>  
+    <value>AzureWave Technology Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>28:c2:dd</key>  
+    <value>AzureWave Technology Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>04:56:04</key>  
+    <value>Gionee Communication Equipment Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c8:ff:28</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ec:55:f9</key>  
+    <value>Hon Hai Precision Ind. Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9c:d2:1e</key>  
+    <value>Hon Hai Precision Ind. Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c0:9f:05</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>40:e2:30</key>  
+    <value>AzureWave Technology Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>da:a1:19</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:23:89</key>  
+    <value>Hangzhou H3C Technologies Co., Limited</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>fc:f8:ae</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>86:81:98</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>cc:b0:da</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>8c:79:67</key>  
+    <value>zte corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c8:f2:30</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>1c:48:ce</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>26:6d:57</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>e4:47:90</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>3c:b6:b7</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>84:55:a5</key>  
+    <value>Samsung Electronics Co.,Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>7c:11:cb</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>2c:5b:b8</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>38:29:5a</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>84:4b:f5</key>  
+    <value>Hon Hai Precision Ind. Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>6a:74:e0</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:03:0f</key>  
+    <value>Digital China (Shanghai) Networks Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>f0:1b:6c</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>34:80:b3</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>68:3e:34</key>  
+    <value>MEIZU Technology Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ac:e0:10</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>2e:e0:10</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>cc:2d:83</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>28:fa:a0</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>60:6d:c7</key>  
+    <value>Hon Hai Precision Ind. Co.,Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>20:5d:47</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>64:b4:73</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ac:b5:7d</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>5e:b5:7d</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>1e:77:f6</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>e0:dd:c0</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b8:5a:73</key>  
+    <value>Samsung Electronics Co.,Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a8:1b:5a</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c4:66:99</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>3c:a3:48</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>0e:82:87</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b8:81:98</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>44:04:44</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>fc:1a:11</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>78:45:61</key>  
+    <value>CyberTAN Technology Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>90:21:81</key>  
+    <value>Shanghai Huaqin Telecom Technology Co.,Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>d8:9a:34</key>  
+    <value>Beijing SHENQI Technology Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c6:d9:6e</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ec:df:3a</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b8:37:65</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>0e:e7:87</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b4:30:52</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>88:6a:b1</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>10:f6:81</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>74:51:ba</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>58:44:98</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b0:9f:ba</key>  
+    <value>Apple, Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>80:13:82</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>7c:7d:3d</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ec:01:ee</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>ae:7f:bf</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>88:25:93</key>  
+    <value>TP-LINK TECHNOLOGIES CO.,LTD.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>f4:8e:92</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>10:2a:b3</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:08:22</key>  
+    <value>InPro Comm</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>48:db:50</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>1c:77:f6</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>18:e2:9f</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>64:b0:a6</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>3e:26:fc</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>5c:f7:c3</key>  
+    <value>SYNTECH (HK) TECHNOLOGY LIMITED</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>90:67:1c</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c4:f0:81</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>c8:25:e1</key>  
+    <value>Lemobile Information Technology (Beijing) Co., Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>18:cf:5e</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>74:df:bf</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>00:1e:64</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>88:28:b3</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a4:71:74</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>74:1b:b2</key>  
+    <value>Apple, Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>20:82:c0</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9c:a5:c0</key>  
+    <value>vivo Mobile Communication Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>90:b6:86</key>  
+    <value>Murata Manufacturing Co., Ltd.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>26:ef:fd</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a0:86:c6</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>aa:c8:3a</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>54:dc:1d</key>  
+    <value>Yulong Computer Telecommunication Scientific (Shenzhen) Co.,Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>0a:1b:bc</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>6a:ae:74</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>3e:6f:01</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>24:df:6a</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>08:23:b2</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>bc:3a:ea</key>  
+    <value>GUANGDONG OPPO MOBILE TELECOMMUNICATIONS CORP.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a4:44:d1</key>  
+    <value>Wingtech Group (HongKong）Limited</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>24:00:ba</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>32:60:fb</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>98:e7:f5</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9c:fb:d5</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>d0:53:49</key>  
+    <value>Liteon Technology Corporation</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>54:19:c8</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>42:e2:30</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>a4:02:b9</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>e4:f8:9c</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>4a:5a:b6</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>6a:07:15</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>e4:02:9b</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>94:92:bc</key>  
+    <value>SYNTECH(HK) TECHNOLOGY LIMITED</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>b8:44:d9</key>  
+    <value>Apple, Inc.</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>24:09:95</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>18:59:36</key>  
+    <value>Xiaomi Communications Co Ltd</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>68:07:15</key>  
+    <value>Intel Corporate</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>9c:b2:b2</key>  
+    <value>HUAWEI TECHNOLOGIES CO.,LTD</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>d6:17:cb</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>0e:c4:03</key>  
+    <value>Private Enterprise</value> 
+  </wifi_item>  
+  <wifi_item> 
+    <key>20:a2:e4</key>  
+    <value>Apple, Inc.</value> 
+  </wifi_item> 
+</data>
