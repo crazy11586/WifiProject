@@ -14,9 +14,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 
+import org.apache.struts2.ServletActionContext;
 import org.dom4j.DocumentException;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
@@ -58,19 +61,37 @@ public class Server {
 	private static boolean flag;
 	static org.dom4j.Document document;
 	private static LruCache<String,String> lrucache;
-	
+	//只能通过手动添加电脑MAc地址来区分手机和电脑的MAC地址了，无奈。。。。
+	private static ArrayList<String> PC_MAC ;
+	private static String urlPath;
 	/***
 	 * 测试
 	 * @param args
 	 * @throws Exception
 	 */
-	public static void main(String args[]) throws Exception {
-
+//	public static void main(String args[]) throws Exception {
+//		lrucache = new LruCache<String, String>(100);
+//		PC_MAC = new ArrayList<>();
+//		PC_MAC.add("50:68:0a:4a:1c:55");
+//		
+//		InitReader();
+//		InitDaq();
+//	}
+	
+	public static void begin(String url){
+		urlPath = url;
 		lrucache = new LruCache<String, String>(100);
+		PC_MAC = new ArrayList<>();
+		PC_MAC.add("50:68:0a:4a:1c:55");
 		
-		InitReader();
-		InitDaq();
-
+		try {
+			InitReader();
+			InitDaq();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
 	}
 
 	/**
@@ -79,12 +100,12 @@ public class Server {
 	 * @throws SAXException 
 	 */
 	private static void InitReader() throws DocumentException, SAXException {
-		
 		SAXReader saxReader = new SAXReader();
 		saxReader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
-		document = saxReader.read(new File("WebContent/WEB-INF/mac_search.xml"));
+	//	String str = ServletActionContext.getServletContext().getRealPath("/");
+		document = saxReader.read(new File(urlPath));
 		root = document.getRootElement();
-		
+		System.out.println("InitReader");
 	}
 
 	/**
@@ -93,33 +114,20 @@ public class Server {
 	 */
 	private static void InitDaq() throws IOException, UnsupportedEncodingException {
 		serverSocket = new ServerSocket(10002);
-		
+		System.out.println("InitDaq");
 		while (true) {
-
 			Socket socket = serverSocket.accept();
-
 			BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
 			String line = in.readLine();
-
 			while (line != null) {
-
 				if (line.length() >= 4 && line.startsWith("data")) {
-
 					Change2WifiDate(line);
-
 				}
-
 				line = in.readLine();
-
 			}
-
 			in.close();
-
 			socket.close();
-
 		}
-		
 	}
 	
 	/**
@@ -127,30 +135,33 @@ public class Server {
 	 * @param json字符串
 	 * @throws UnsupportedEncodingException
 	 */
-	public static void Change2WifiDate(String jsonstr) throws UnsupportedEncodingException {
-		
+	public static void Change2WifiDate(String jsonstr) throws UnsupportedEncodingException {		
 		JsonParser parse = new JsonParser(); // 创建json解析器
-		
 		ArrayList<WifiData> alldata = new ArrayList<>();
-		
 		JsonObject json = (JsonObject) parse.parse(jsonstr.substring(5, jsonstr.length()));
-		
-		
 		Wifi wifi = new Wifi();
-
 		wifi.setId(json.get("id").getAsString());
-		wifi.setTime(json.get("time").getAsString());
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		wifi.setTime(sdf.format(new Date()));
 		wifi.setLat(json.get("lat").getAsString());
 		wifi.setLon(json.get("lon").getAsString());
+		
+		System.out.println("Lat :"+wifi.getLat()+"Lon :"+wifi.getLon());
 
 		JsonArray array = json.get("data").getAsJsonArray();
-
+		
 		//遍历采集到的数据
 		for (int i = 0; i < array.size(); i++) {
 
 			WifiData wifiData = new WifiData();
 			
 			JsonObject subObject = array.get(i).getAsJsonObject();
+			
+			if(PC_MAC.contains(subObject.get("mac").getAsString())){
+				continue;
+				
+			}
+		//	System.out.println(""+i);
 
 			wifiData.setMac(subObject.get("mac") == null ? "-1" : subObject.get("mac").getAsString());
 			wifiData.setRssi(subObject.get("rssi") == null ? "-1" : subObject.get("rssi").getAsString());
@@ -229,7 +240,7 @@ public class Server {
 		 * 将变更过的数据写入xml中
 		 */
 	        try { 
-	        	FileOutputStream out = new FileOutputStream("WebContent/WEB-INF/mac_search.xml");
+	        	FileOutputStream out = new FileOutputStream(urlPath);
 		        //OutputFormat format = OutputFormat.createCompactFormat();//生成物理文件，布局较乱适合电脑
 		        OutputFormat format = OutputFormat.createPrettyPrint();//标准化布局，适合查看时显示。
 		        //1.创建写入文件
@@ -291,6 +302,6 @@ public class Server {
 	      sb.append((char) cp);
 	    }
 	    return sb.toString();
-	  }
+	}
 
 }

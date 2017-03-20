@@ -11,6 +11,11 @@
             <result name="input">/index.jsp</result>
             <result name="error">/index.jsp</result>
         </action>
+        
+        <action name="begin" class="com.jsu.action.BeginAction">
+            <result name="success" type="redirect">/account.html</result>
+        </action>
+        
     </package>
     
 </struts>

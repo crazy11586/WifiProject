@@ -23,4 +23,8 @@
     </listener-class>
   </listener>
   
+  <welcome-file-list>
+  	<welcome-file>begin.html</welcome-file>
+  </welcome-file-list>
+  
 </web-app>

@@ -45,10 +45,16 @@ public class Wifi {
 	public void setData(ArrayList<WifiData> data) {
 		this.data = data;
 	}
+	
+	
 	@Override
 	public String toString() {
-		return "Wifi [id=" + id + ", dataLength=" + data.size() + "]";
+		
+		String str = "Wifi [id=" + id + ", data=" + data + ", time=" + time + ", lat=" + lat + ", lon=" + lon + "]";
+
+		return str;
 	}
+	
 	
 	
 	

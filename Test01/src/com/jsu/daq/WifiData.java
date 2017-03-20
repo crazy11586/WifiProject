@@ -134,8 +134,6 @@ public class WifiData {
 		return "WifiData [mac=" + mac + ", rssi=" + rssi + ", ch=" + ch + ", ts=" + ts + ", tmc=" + tmc + ", tc=" + tc
 				+ ", ds=" + ds + ", phoneFirm=" + phoneFirm + "]";
 	}
-	
-	
-	
+
 
 }
